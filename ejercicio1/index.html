@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h3>Utilizando el bucle do while: Ingresar 2 números y mostrar el cubo de todos los números impares
+                comprendidos entre ellos inclusive.</h3>
+        </header>
+        <hr>
+        <h2>Cubo de los números impares:</h2>
+        <section>
+            <script>
+                var sum = 0, cubo = 0;
+                num1 = parseInt(prompt("Ingrese el 1er número"))
+                num2 = parseInt(prompt("Ingrese el 2do número"))
+                document.write("<h3>Comprendidos entre "+num1+" y "+num2+"</h3>");
+                if (num1 < num2) {
+                    var x = num1;
+                    do {
+                        if (x % 2 != 0) {
+                            cubo = Math.pow(x, 3)
+                            document.write("El cubo de " + x + " es " + cubo + "<br>");
+                        }
+                        x++;
+                    }
+                    while (x <= num2)
+                }
+                else{
+                    var x = num2;
+                    do {
+                        if (x % 2 != 0) {
+                            cubo = Math.pow(x, 3)
+                            document.write("El cubo de " + x + " es " + cubo + "<br>");
+                        }
+                        x++;
+                    }
+                    while (x <= num1)
+                }
+            </script>
+        </section>
+    </main>
+</body>
+
+</html>
